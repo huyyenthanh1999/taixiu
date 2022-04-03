@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis;.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+.app-container{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    background-image: url('./assets/images/background-fix-2222222-20220318032704.png');
+}
+.img-bg{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    background-position: center top;
+    background-repeat: repeat;
+    left: 0;
+    top: 0;
+}
+.sidebar{
+    width: 406px; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sidebar-item{
+    width: 403px;
+    height: 222px;
+    position: relative;
+}
+.image1{
+    background-image: url('./assets/images/mobile_km1-20211226090557.png')
+}
+.image2{
+    background-image: url('./assets/images/mobile_km2222-20220318033057.png')
+}
+.image3{
+    background-image: url('./assets/images/mobile_km3-20211226090557.png')
+}   
+.main-content{
+    margin-top: 22px;
+    flex: 1;
+}
+.main-content__wrapper {
+    max-width: 690px;
+    margin: 0 auto;
+}
+.prev,
+.next {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 33px;
+    color: #fff;
+    z-index: 1;
+}
+.prev:hover,
+.next:hover {
+    cursor: pointer;
+}
+.prev {
+    left: 5px;
+}
+.next {
+    left: 390px;
+}
+.content-main__top {
+    position: relative;
+    width: 433px;
+    height: 120px;
+    margin: 0 auto;
+}
+.content-main__heading {
+    position: relative;
+    width: 690px;
+    height: 167px;
+    margin: 0 auto;
+}
+.top-logo{
+    background-image: url('./assets/images/logo-20220318032714.png');
+}
+.main-heading{
+    background-image: url('./assets/images/chu-20211203021229.png');
+}
+.content-head__heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: #E8E230;
+    margin-top: 25px;
+    font-weight: 400;
+}
+.main-content__body{
+    position: relative;
+    width: 663px;
+    height: 426px;
+    margin: 0 auto;
+}
+.form-input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./assets/images/khung-20211226083815.png');
+}
+.input-label {
+    position: relative;
+    display: inline-block;
+    width: 520px;
+    height: 90px;
+}
+.sign-up-label{
+    background-image: url('./assets/images/dk_tk-20211226083815.png')
+}
+.icon-touch {
+    position: absolute;
+    width: 65px;
+    height: 77px;
+    top: 50%;
+    right: 8px;
+}
+.touch-icon {
+    background-image: url('./assets/images/touch-20211020031357.png')
+}
+.input-control{
+    position: relative;
+    width: 520px;
+    height: 90px;
+    margin-top: 30px;
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./assets/images/khung_text-20211226083815.png')
+}
+.input input {
+    width: 100%;
+    padding:  0 20px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 25px;
+    color: #E8E230;
+    z-index: 1;
+    outline: none;
+}
+input::placeholder {
+    color: #E8E230;
+}
+.signup-btn{
+    position: relative;
+    width: 293px;
+    height: 68px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.sign-up{
+    background-image: url('./assets/images/btn_dang-ky-ngay-20211226083814.png')
+}
+.social-list{
+    margin-top: 10px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.social-list a {
+    display: block;
+}
+.social-item{
+    position: relative;
+    width: 67px;
+    height: 67px;
+}
+.facebook{
+    background-image: url('./assets/images/fb-20211226084656.png');
+}
+.zalo{
+    background-image: url('./assets/images/zl-20211226084656.png');
+}
+.youtube{
+    background-image: url('./assets/images/ytb-20211226084656.png');
+}
+.telegram{
+    background-image: url('./assets/images/tl-20211226084656.png');
+}
+.sidebar-list {
+    display: flex;
+    position: relative;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+@media screen and (max-width: 90.625em) {
+    .main-content__wrapper {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 68.75em){
+    .sidebar {
+        position: static;
+        transform: translateY(0);
+        margin-bottom: 20px;
+        flex: 1;
+    }
+    .main-content__wrapper {
+        margin: 0 auto;
+    }
+    .app-container {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .content-main__top {
+        width: 326px;
+        height: 90px;
+    }
+    .content-main__heading {
+        width: 396px;
+        height: 98px;
+    }
+    .main-content__body {
+        width: 397px;
+        height:255px
+    }
+    .input-label,
+    .input-control {
+        width: 324px;
+        height: 55px;
+        margin-top: 15px;
+    }
+    .signup-btn{
+        width: 178px;
+        height: 41px;
+        margin-top: 15px;
+    }
+    .social-item {
+        width: 55px;
+        height: 55px
+    }
+    .icon-touch {
+        width: 42px;
+        height: 49px;
+    }
+}
+
+@media screen and (max-width: 37.5em){
+    .app-container {
+        overflow-y: auto;
+    }
+    .content-main__top {
+        width: 290px;
+        height: 80px;
+    }
+    .content-main__heading {
+        width: 350px;
+        height: 87px;
+    }
+    .main-content__body {
+        width: 350px;
+        height:224px
+    }
+    .input-label,
+    .input-control {
+        width: 300px;
+        height: 51px;
+        margin-top: 10px;
+    }
+    .signup-btn{
+        width: 178px;
+        height: 41px;
+        margin-top: 15px;
+    }
+    .sidebar {
+        width: 350px;
+    }
+    .sidebar-item {
+        width: 347px;
+        height: 192px
+    }
+    .next {
+        left: 315px;
+    }
+    .icon-touch {
+        top: 10px;
+    }
+}
+@keyframes blink {
+    50% {
+      opacity: 0.0;
+    }
+  }
+.blink {
+    animation: blink .5s step-start 0s infinite;
+}
